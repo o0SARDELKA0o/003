@@ -1,0 +1,37 @@
+/* стили для кнопки */
+button {
+  /* размеры кнопки */
+  width: 200px;
+  height: 70px;
+  /* граница кнопки */
+  border: 1px solid black;
+  /* белый фон */
+  background-color: rgb(255, 218, 9);
+  /* сложная комбинация, чтобы кнопка была по центру экрана */
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  /* уберём подсветку кнопки при клике */
+  outline: none;
+  /* приятно — плавные переходы при наведении */
+  transition: all .4s ease;
+  /* настройки шрифта */
+  font-family: 'Arial Narrow', sans-serif;
+  font-size: 20px;
+}
+
+/* стили для кнопки при наведении */
+button:hover {
+  /* курсор — палец */
+  cursor: pointer;
+  /* малиновая тень */
+  box-shadow: 4px 4px rgb(94, 55, 6);
+}
+
+.clicked {
+  /* background-color — для цвета фона */
+  background-color: rgb(216, 161, 10);
+  /* color — для цвета текста */
+  color: white;
+}
